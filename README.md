@@ -1,32 +1,26 @@
-# A01797412 - Actividad 4.2: Ejercicios de Programacion
+# Actividad 4.2: Ejercicios de Programación
 
-**Materia:** Pruebas de Software y Aseguramiento de la Calidad
-**Alumno:** A01797412
-**Fecha:** Febrero 2026
+- **Materia:** Pruebas de Software y Aseguramiento de la Calidad
+- **Alumno:** Erick Fernando Holguin Pardavell - Matricula: A01797412
+- **Fecha:** 5 Febrero 2026
 
----
 
 ## Descripcion del Proyecto
 
 Este repositorio contiene la implementacion de 3 programas en Python siguiendo el estandar PEP-8 y verificados con pylint, como parte de la Actividad 4.2.
 
----
 
-## Requerimientos de la Tarea
+## Evidencias
 
-Cada programa debe cumplir con:
-- Invocacion desde linea de comandos con archivo como parametro
-- Calculos usando **algoritmos basicos** (sin funciones o librerias de estadisticas)
-- Manejo de datos invalidos (mostrar errores y continuar ejecucion)
-- Mostrar resultados en pantalla y guardar en archivo
-- Incluir tiempo de ejecucion
-- Cumplir con **PEP-8** y pasar **pylint**
-
----
+Checar la evidencia del código corriendo correctamente en la carpeta "evidencias"
+- pylint-evidencia.png
+- P1_TestEvidence.txt
+- P2_TestEvidence.txt
+- P3_TestEvidence.txt
 
 ## Programas Implementados
 
-### 1. compute_statistics.py
+### Problema 1: compute_statistics.py
 Calcula estadisticas descriptivas de un archivo con numeros.
 
 **Estadisticas calculadas:**
@@ -46,7 +40,7 @@ python compute_statistics.py fileWithData.txt
 
 ---
 
-### 2. convert_numbers.py
+### Problema 2: convert_numbers.py
 Convierte numeros a representacion binaria y hexadecimal.
 
 **Caracteristicas:**
@@ -63,7 +57,7 @@ python convert_numbers.py fileWithData.txt
 
 ---
 
-### 3. word_count.py
+### Problema 3: word_count.py
 Cuenta la frecuencia de palabras en un archivo de texto.
 
 **Caracteristicas:**
@@ -78,21 +72,6 @@ python word_count.py fileWithData.txt
 
 **Archivo de salida:** `WordCountResults.txt`
 
----
-
-## Instalacion y Configuracion
-
-### 1. Clonar el repositorio
-```bash
-git clone <url-del-repositorio>
-cd A01797412_A4.2
-```
-
-### 2. Crear entorno virtual e instalar dependencias
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install pylint
 ```
 
 ---
@@ -107,18 +86,11 @@ python run_tests_p2.py  # Genera P2_TestEvidence.txt
 python run_tests_p3.py  # Genera P3_TestEvidence.txt
 ```
 
-### Ejecutar tests individuales
-```bash
-python compute_statistics.py test_files/TC1.txt
-python convert_numbers.py test_files/P2_TC1.txt
-python word_count.py test_files/P3_TC1.txt
-```
-
----
 
 ## Resultados de Pruebas
 
 ### Programa 1: compute_statistics.py (7 casos de prueba)
+---
 
 ```
 ======================================================================
@@ -165,9 +137,9 @@ TODOS LOS CASOS DE PRUEBA EJECUTADOS EXITOSAMENTE
 | TC6 | 3000 | - |
 | TC7 | 12767 | `ABBA`, `ERROR` |
 
----
 
 ### Programa 2: convert_numbers.py (4 casos de prueba)
+---
 
 ```
 ======================================================================
@@ -197,9 +169,9 @@ TODOS LOS CASOS DE PRUEBA EJECUTADOS EXITOSAMENTE
 ======================================================================
 ```
 
----
-
 ### Programa 3: word_count.py (5 casos de prueba)
+
+---
 
 ```
 ======================================================================
@@ -223,8 +195,6 @@ Elapsed Time: 0.000629 seconds
 TODOS LOS CASOS DE PRUEBA EJECUTADOS EXITOSAMENTE
 ======================================================================
 ```
-
----
 
 ## Resultados de Pylint
 
@@ -254,7 +224,6 @@ Your code has been rated at 10.00/10
 
 **Nota:** Los unicos warnings menores (R0801 - codigo duplicado) son por patrones de manejo de errores similares entre archivos, lo cual es una practica estandar.
 
----
 
 ## Estructura del Proyecto
 
@@ -280,7 +249,6 @@ A01797412_A4.2/
 └── venv/                        # Entorno virtual Python
 ```
 
----
 
 ## Cumplimiento de Requerimientos
 
@@ -295,11 +263,3 @@ A01797412_A4.2/
 | Tiempo de ejecucion | OK | OK | OK |
 | Cumple PEP-8 | OK | OK | OK |
 | Pylint sin errores | OK | OK | OK |
-
----
-
-## Autor
-
-- **Matricula:** A01797412
-- **Materia:** Pruebas de Software y Aseguramiento de la Calidad
-- **Institucion:** Tecnologico de Monterrey
